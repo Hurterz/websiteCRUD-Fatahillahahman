@@ -1,0 +1,237 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #FAF7F0; /* Warna krem terang */
+    color: #4A4947; /* Warna abu-abu gelap */
+}
+
+h2 {
+    text-align: center;
+    color: #4A4947; /* Warna abu-abu gelap */
+}
+
+/* Form Styles (for index.php & update.php) */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D8D2C2; /* Warna krem keabuan */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4A4947; /* Warna abu-abu gelap */
+}
+
+input[type=text], input[type=number], input[type=file], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D8D2C2; /* Warna krem keabuan */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #FAF7F0; /* Warna krem terang */
+    color: #4A4947; /* Warna abu-abu gelap */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type=submit], .cancel-btn {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+input[type=submit] {
+    background-color: #B17457; /* Warna coklat kemerahan */
+    color: #FAF7F0; /* Warna krem terang */
+}
+
+input[type=submit]:hover {
+    background-color: #9b5f42; /* Warna coklat kemerahan lebih gelap */
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f; /* Warna merah lebih gelap */
+}
+
+/* Table Styles (for result.php) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #D8D2C2; /* Warna krem keabuan */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: #4A4947; /* Warna abu-abu gelap */
+}
+
+th {
+    background-color: #B17457; /* Warna coklat kemerahan */
+    color: #FAF7F0; /* Warna krem terang */
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5; /* Warna baris genap sedikit lebih terang */
+}
+
+tr:hover {
+    background-color: #F0EDE9; /* Warna saat hover */
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #D8D2C2; /* Border image */
+    padding: 5px;
+    background-color: #FAF7F0;
+}
+
+/* Button Styles */
+.back-btn, .edit-btn, .delete-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #FAF7F0;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn {
+    background-color: #4A4947; /* Warna abu-abu gelap */
+}
+
+.back-btn:hover {
+    background-color: #3c3a38; /* Warna hover abu-abu lebih gelap */
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Warna hijau */
+}
+
+.edit-btn:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap */
+}
+
+.delete-btn {
+    background-color: #f44336; /* Warna merah */
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; /* Warna merah lebih gelap */
+}
+
+/* Image Preview Styles (for update.php) */
+#imagePreview {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #D8D2C2;
+    padding: 5px;
+    background-color: #FAF7F0;
+}
+input[type=file] {
+    background-color: #B17457; /* Warna coklat palet */
+    color: white; /* Warna teks putih */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+input[type=file]::file-selector-button {
+    background-color: #B17457; /* Warna tombol dari palet */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: #9C6449; /* Warna lebih gelap saat hover */
+}
+/* Gaya untuk semua tombol */
+input[type=submit], input[type=file]::file-selector-button, .cancel-btn {
+    background-color: #B17457; /* Warna tombol dari palet */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Efek shadow */
+}
+
+input[type=submit].edit {
+    background-color: #4CAF50; /* Warna hijau untuk tombol Edit */
+}
+
+.cancel-btn {
+    background-color: #f44336; /* Warna merah untuk tombol Cancel */
+}
+
+/* Hover Effect untuk semua tombol */
+input[type=submit]:hover, input[type=file]::file-selector-button:hover, .cancel-btn:hover {
+    background-color: #9C6449; /* Warna lebih gelap saat hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih intens saat hover */
+}
+
+/* Efek shadow lebih kecil saat tombol ditekan (active state) */
+input[type=submit]:active, input[type=file]::file-selector-button:active, .cancel-btn:active {
+    background-color: #8D5D47; /* Warna lebih gelap saat active */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan lebih kecil saat ditekan */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form, table {
+        width: 100%;
+    }
+
+    input[type=submit], .back-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
